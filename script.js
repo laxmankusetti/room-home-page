@@ -35,3 +35,22 @@ function menuOpen() {
 function menuClose() {
   mobileMenu.classList.remove('open')
 }
+
+
+const images = [
+  './images/mobile-image-hero-1.jpg', 
+  './images/mobile-image-hero-2.jpg', 
+  './images/mobile-image-hero-3.jpg'
+]
+
+let mobileImage = document.getElementById('mobile-image')
+let currentInd = 0
+function changeImage(direction){
+  currentInd += direction
+  if(currentInd < 0){
+    currentInd = images.length-1
+  } else if(currentInd > images.length - 1){
+    currentInd = 0
+  }
+  mobileImage.src = images[currentInd]
+}

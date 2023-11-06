@@ -19,8 +19,8 @@
       </div>
     </div>
     <div class="slider-btns">
-      <button class="prev-button"><img src="./images/icon-angle-left.svg" alt="left-cevron" width="10px" height="20px"></button>
-      <button class="next-button"><img src="./images/icon-angle-right.svg" alt="right-cevron" width="10px" height="20px"></button>
+      <button class="prev-button"><img src="./images/icon-angle-left.svg" alt="left-cevron" width="10px" height="20px" onclick="changeImage(-1)"></button>
+      <button class="next-button"><img src="./images/icon-angle-right.svg" alt="right-cevron" width="10px" height="20px" onclick="changeImage(1)"></button>
     </div>
     <nav class="navbar">
       <img src="./images/logo.svg" alt="branding-logo">
@@ -32,7 +32,7 @@
     </nav>
     <div class="slider-container">
       <div class="mobile-slider-container">
-        <img src="./images/mobile-image-hero-1.jpg" alt="chairs & a table">
+        <img src="./images/mobile-image-hero-1.jpg" alt="chairs & a table" id="mobile-image">
         <div class="slide-description">
           <h2>Discover innovative ways to decorate</h2>
           <p>
